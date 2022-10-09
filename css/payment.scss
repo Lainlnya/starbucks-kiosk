@@ -1,0 +1,278 @@
+$main_dark: #001e1e;
+$main_light: #dbd6c1;
+$point_light: #d2925f;
+$point_dark: #1b3c35;
+$light_green: #36544d;
+
+.payment_area {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    display : none;
+    width : 700px;
+    height : 900px;
+    margin : 0 auto;
+    z-index : 2000;
+    background-color: #001e1e;
+}
+    .payment_header_area {
+        width : 700px;
+        height : 90px;
+        background-color : $point_dark;
+        text-align : center;
+        line-height : 90px;
+        background-image: url("../image/header/1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .payment_content_area {
+        width : 680px;
+        height : 610px;
+        padding : 0px 10px;
+        margin : 10px 0px;
+        text-align : center;
+    }
+
+    .payment_title_area {
+        height: 45px;
+        background-color: #1b3c35;
+        text-align: center;
+        line-height: 45px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+        .payment_menu_title {
+            width : 339px;
+            height : 100%;
+            background-color : $point_dark;
+        }
+        .payment_count_title {
+            width : 150px;
+            height : 100%;
+        }
+        .payment_price_title {
+            width : 150px;
+            height : 100%;
+            background-color : $point_dark;
+            }
+            .payment_print_menu {
+                height: 425px;
+                margin: 10px 0px;
+                padding: 0 20px;
+                overflow-y: auto;
+            }
+            .payment_print_menu::-webkit-scrollbar{
+                width: 10px;
+            }
+            .payment_print_menu::-webkit-scrollbar-thumb{
+                height: 10%;
+                background-color: $light_green;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+            .payment_print_menu::-webkit-scrollbar-track{
+                background-color: $point_dark;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+}
+            .payment_select_yes_option {
+                width: 620px;
+                height: 50px;
+                border-bottom: 1px solid;
+                padding: 20px 0;
+            }
+            .payment_select_no_option {
+                width: 620px;
+                height : 35px;
+                border-bottom: 1px solid;
+                padding: 20px 0;
+            }
+                .payment_menu_line {
+                    font-size : 20px;
+                    display : block;
+                    height : 30px;
+                    line-height : 30px;
+                }
+                .payment_menu_name {
+                    width: 319px;
+                    height: 100%;
+                    text-align: left;;
+                }
+                    .payment_menu_count {
+                        width : 150px;
+                        height : 100%;
+                    }
+                    .payment_menu_price {
+                        width : 150px;
+                        height : 100%;
+                    }
+                    .payment_option_box {
+                        height: 53px;
+                        line-height: 20px;
+                        text-align: left;
+                        margin: 6px;
+                        margin-bottom: 13px;
+                        padding-bottom: 11px;
+                        font-size: 13px;
+                    }
+                    .payment_result_area {
+                        height: 100px;
+                        background-color: #1b3c35;
+                        line-height: 100px;
+                        text-align: center;
+                        border-radius: 10px;
+                    }
+        .payment_total_title {
+            width: 339px;
+            height: 100%;
+        }
+            .payment_total_count {
+                width : 150px;
+                height : 100%;
+            }
+            .payment_total_price {
+                width : 150px;
+                height : 100%;
+            }
+    .footer_area {
+        width : 100%;
+        height : 180px;
+        background-color : $main_dark;
+    }
+        .payment_button_box {
+            width: calc(100% - 20px);
+            height: 150px;
+            background-color: $main_dark;
+            margin-left: 10px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+}
+.payment_btn_style {
+    display: inline-block;
+    float: left;
+    width: 140px;
+    height: 140px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 25px;
+    background-color: $main_dark;
+    border: 3px solid $point_dark;
+    color: $main_light;
+    border-radius: 10px;
+    margin: 5px;
+}
+.payment_btn_style:hover{
+    transition: 0.28s;
+    background-color: #1b3c35;
+    cursor: pointer;
+    font-family: 'Gowun Dodum', sans-serif;
+    -webkit-transition: 0.28s;
+    -moz-transition: 0.28s;
+    -ms-transition: 0.28s;
+    -o-transition: 0.28s;
+}
+
+.payment_inline_style {
+    display: inline-block;
+    float: left;
+    font-size: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    .payment_menu_name {
+        
+        float: left;
+        font-size: 25px;
+    }
+    .payment_with_box{ 
+        width: 380px;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+    }
+    .payment_with_point{ 
+        width: 190px; 
+        height: 76px;
+        line-height: 74px;
+        display: block;
+        float: left;
+        font-size: 20px;
+    }
+    .payment_box_left, .payment_box_right{ 
+        width: 190px; height: 76px; line-height: 74px; 
+        display: inline-block; float: left;
+    }
+    .payment_pre_btn{ height: 85px; width: 85px; float: right;}
+    .payment_home_btn{height: 85px; width: 85px; float: left; }
+    .payment_home_btn {
+        width: 80px;
+        height: 80px;
+        background-image: url("../image/header/2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #1b3c35;
+        margin: 7px 9px;
+    }
+    .payment_monthly{
+        width: 700px;
+        height: 900px;
+        background-color: #36544dd0;
+        color: #dbd6c1;
+        font-size: 30px;
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .payment_monthly_select{
+        width:  400px;
+        height: 600px;
+        border: 3px solid;
+        position: absolute;
+        background-color: #001e1eb7;
+        top: 50%;
+        left: 50%;
+        line-height: 95px;
+        border: 3px solid $main_light;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        color: $point_light;
+    }
+    .payment_monthly_select div {
+        width: 200px;
+        height: 170px;
+        display: inline-block;
+        float: left;
+        line-height: 172px;
+        border-radius: 10px;
+        color:$main_light;
+    }
+    .payment_monthly_select div:hover{
+        background-color: #1b3c359d;
+        cursor: pointer;
+    }

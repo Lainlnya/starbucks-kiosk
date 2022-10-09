@@ -1,0 +1,125 @@
+$main_dark: #001e1e;
+$main_light: #dbd6c1;
+$point_light: #d2925f;
+$point_dark: #1b3c35;
+$light_green: #36544d;
+
+// 카드배경
+.card_background{
+    position: fixed; z-index: 5500;
+    width: 700px; height: 900px;
+    top: 32px; left: 50%;
+    margin: 0 -350px;
+    display: none;
+    background-color: rgba(0, 30, 30,0.5);
+}
+
+
+.main_box{
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    z-index: 6000;
+    width: 600px;
+    height: 800px;
+    background-color: #36544dc0;
+    text-align: center;
+    margin: 30px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    display: none;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    border: 3px solid;
+}
+header{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.cancle_btn{
+    width: 70px;
+    height: 70px;
+    float: right;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: $main_light;
+    background-color: $main_dark;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    margin: 10px;
+}
+.cancle_btn:hover{
+    opacity: 0.8;
+    transition: 0.28s;
+    -webkit-transition: 0.28s;
+    -moz-transition: 0.28s;
+    -ms-transition: 0.28s;
+    -o-transition: 0.28s;
+}
+.img_box{ 
+    width: 500px; height: 380px; 
+    margin: 0 auto; text-align: center;
+    padding-top: 130px;
+}
+
+.card_img{
+    width: 300px;
+    height: 300px;
+    animation: ani_img 2s infinite alternate;
+    -webkit-animation: ani_img 2s infinite alternate;
+}
+    @keyframes ani_img {
+        0% {
+            transform: translate( 40%, 0 ) ;
+            -webkit-transform: translate( 40%, 0 ) ;
+            -moz-transform: translate( 40%, 0 ) ;
+            -ms-transform: translate( 40%, 0 ) ;
+            -o-transform: translate( 40%, 0 ) ;
+        }
+        100% {
+            transform: translate(-40%, 0);
+            -webkit-transform: translate(-40%, 0);
+            -moz-transform: translate(-40%, 0);
+            -ms-transform: translate(-40%, 0);
+            -o-transform: translate(-40%, 0);  
+        }
+    }
+        figcaption{ font-size: 30px; margin: 10px;}
+        .card_cancle_btn{
+            width: 500px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: $main_dark;
+            font-weight: 700;
+            font-size: 18px;
+            border:none;
+            color:$main_light;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            font-family: 'Gowun Batang', serif;
+            font-weight: 100;
+            cursor: pointer;
+        }
+        .card_cancle_btn:hover{
+            background-color: $light_green;
+            transition: 0.28s;
+            -webkit-transition: 0.28s;
+            -moz-transition: 0.28s;
+            -ms-transition: 0.28s;
+            -o-transition: 0.28s;
+}

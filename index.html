@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- FOOFLE FONT LOAD -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+     <!-- JQUERY LOAD -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+     <!-- XEICON LOAD -->
+          <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+          <title>Welcome STARBUCKS</title>
+     <!-- Favicon LOAD -->
+          <link rel="shortcut icon" href="./image/header/2.png">
+     <!-- CSS COMPILE -->
+          <link rel="stylesheet" href="./css/reset.css">
+          <link rel="stylesheet" href="./css/card.css">
+          <link rel="stylesheet" href="./css/menu.css">
+          <link rel="stylesheet" href="./css/payment.css">
+          <link rel="stylesheet" href="./css/point.css">
+          <link rel="stylesheet" href="./css/slide.css">
+     <!-- JS COMPILE -->
+          <script  src="./js/slide.js"></script>
+          <script src="./js/menu.js"></script>
+          <style>
+               @media print{
+                    .receipt_printarea{
+                         page-break-after: auto;
+                         page-break-before: auto;
+                         page-break-inside: avoid;
+                    }
+                    .portpolio_info_string{display: none};
+               }
+          </style>
+     </head>
+     <body>
+          <div class="portpolio_info_string">This page was created for portfolio purposes. This kiosk was made based on 700*900px</div>
+
+          <section class="main_wrap">       
+               <!-- 슬라이드 -->
+               <section class="slides"> 
+                    <section class="slides-nav">
+                    <nav class="slides-nav__nav">
+                    <button class="slides-nav__prev js-prev">Prev</button>
+                    <button class="slides-nav__next js-next">Next</button>
+                    </nav>
+                    </section>
+                    <section class="slide is-active">
+                    <div class="slide__content">
+                    <figure class="slide__figure">
+                         <div class="slide__img slideImg1"></div>
+                    </figure>
+                    </div>
+                    </section>
+                    <section class="slide">
+                    <div class="slide__content">
+                    <figure class="slide__figure">
+                         <div class="slide__img slideImg2"></div>
+                    </figure>
+                    </div>
+                    </section>
+                    <section class="slide">
+                    <div class="slide__content">
+                    <figure class="slide__figure">
+                         <div class="slide__img slideImg3"></div>
+                    </figure>
+                    </div>
+                    </section>
+               </section>
+
+               <section class="main_choice">
+                    <article id="main_in" class="main_in clearinter">매장</article>
+                    <article id="main_out" class="main_out clearinter">포장</article>
+               </section>
+               <!-- 전체컨테이너 -->
+               <section class="container">
+                    <!-- 헤더 -->
+                    <header>
+                         <div class="home_btn">
+                              <span class="img_wrap"></span>
+                         </div>
+                         <div>
+                              <img src="image/header/1.png">MENU
+                         </div>
+                         <div class="time_wrap">
+                              <span class="order_time">120</span><span>초</span>
+                         </div>
+                    </header>
+
+                    <!-- 메뉴바 -->
+                    <nav>
+                         <ul id="nav-1">
+                              <li class="slide1" style="left:100px"></li>         
+                              <li class="slide2"></li>
+
+                              <li class="nav_li"><a href="#" id="tri">New</a></li>
+                              <li class="nav_li" ><a href="#">Coffee</a></li>
+                              <li class="nav_li long_sp"><a href="#">Frappuccino</a></li>
+                              <li class="nav_li" ><a href="#">Tea</a></li>
+                              <li class="nav_li" ><a href="#">Etc</a></li>
+                         </ul>
+                    </nav>
+                    
+                    <!-- 폼을 숨겨서 값을 넘겨줌 -->
+                    <form id="categoryForm">
+                         <input name="category" id="category" type="hidden">
+                         <!-- <input name="category" id="category"> -->
+                    </form>
+                    
+                    <section class="all_menu_wrap">
+                         <!-- 첫번째메뉴 -->
+                         <section class="menu_wrap first_menu">
+                              <div class="btn_wrap">
+                                   <span class="next_btn xi-angle-right-min"></span>
+                              </div>
+                              <!-- 1 줄 -->
+                              <ul class="reset first_ul"></ul>
+                              
+                              <!-- 2줄 -->
+                              <ul class="reset second_ul"></ul>
+                         </section>
+                         
+                         <!-- 두번쨰 -->
+                         <section class="menu_wrap second_menu">
+                              <div class="btn_wrap">
+                                   <span class="prev_btn xi-angle-left-min"></span>
+                                   <span class="next_btn xi-angle-right-min"></span>
+                              </div>
+                              <!-- 1 줄 -->
+                              <ul class="reset first_ul second"></ul>
+                              
+                              <!-- 2줄 -->
+                              <ul class="reset second_ul second"></ul>
+                         </section>
+                         
+                         <!-- 세번쨰 -->
+                         <section class="menu_wrap third_menu">
+                              <div class="btn_wrap">
+                                   <span class="prev_btn xi-angle-left-min"></span>
+                              </div>
+                              <!-- 1 줄 -->
+                              <ul class="reset first_ul third"></ul>
+                              
+                              <!-- 2줄 -->
+                              <ul class="reset second_ul third"></ul>
+                         </section>
+                    </section>
+
+
+                    <section class="menu_order_box">
+                         <div class="menu_option_view">옵션</div>
+                         <hr class="menu_option_hr">
+                         <section class="menu_order_list">
+                              <ul class="menu_order_list_ul"></ul>
+                         </section>
+                         <section class="menu_order_btn">
+                              <div class="menu_order_reset">초기화</div>
+                              <div class="menu_order_payment">결제</div>
+                         </section>
+                    </section>
+                    <section class="menu_container">
+                         <section class="menu_popup">
+                              <section class="mpopup_container">
+                                   <section class="mpopup_choice">
+                                        <div class="mpopup_menu">메뉴명</div>
+                                        <div class="mpopup_price">가격</div>
+                                   </section>
+                                   <hr class="hr_line">
+                                   <section class="mpopup_customize">
+                                   </section>
+                                   <section class="mpopup_end">
+                                        <section class="mpopup_endwrap">
+                                        <div class="mpopup_cancel">취소</div>
+                                        <div class="mpopup_input">주문담기</div>
+                                        </section>
+                                   </section>
+                              </section>
+                         </section>
+                    </section>
+                    <div class="list_order_all_clear">
+                         <div class="list_order_all_clear_ques">정말 삭제하시겠습니까?</div>
+                         <div class="list_order_all_clear_confirm">확인</div><div class="list_order_all_clear_cancel">취소</div>
+                    </div>
+                    <input type="hidden" id="menuClickName">
+               </section>
+               <!--//////////////////////////결제창///////////////////////////// -->
+               <section id="payment_area" class="payment_area">
+                    <header class="payment_header_area">
+                         <button type="button" id="payment_home_btn" class="payment_btn_style payment_pre_btn payment_home_btn"></button>
+                         <button type="button" id="payment_pre_btn" class="payment_btn_style payment_pre_btn">이전</button>
+                    </header>
+                    <section class="payment_content_area">
+                         <section class="payment_title_area">
+                              <article class="payment_title_name">
+                                   <ul>
+                                        <li class="payment_inline_style payment_menu_title">메뉴</li>
+                                        <li class="payment_inline_style payment_count_title">개수</li>
+                                        <li class="payment_inline_style payment_price_title">가격</li>
+                                   </ul>
+                              </article>
+                         </section>
+                         <section id="payment_print_menu" class="payment_print_menu"></section>
+                         <section class="payment_result_area">
+                              <article>
+                                   <ul>
+                                        <li class="payment_inline_style payment_total_title">합계</li>
+                                        <li id="payment_total_count" class="payment_inline_style payment_total_count">0</li>
+                                        <li id="payment_total_price" class="payment_inline_style payment_total_price">0</li>
+                                   </ul>
+                              </article>
+                         </section>
+                    </section>
+                    <section class="footer_area">
+                         <article class="payment_button_box">
+                              <div class="payment_with_box">
+                                   <div class="payment_with_point">사용 포인트</div>
+                                   <div id="payment_use_point" class="payment_with_point">0</div>
+                                   <div class="payment_with_point">결제 예정 금액</div>
+                                   <div id="payment_last_price" class="payment_with_point">0원</div>
+                              </div>
+                                   <button type="button" id="payment_point_button" class="payment_btn_style payment_point_btn">포인트사용</button>
+                                   <button type="button" id="payment_card_button" class="payment_btn_style payment_card_btn">카드결제</button>
+                         </article>
+                    </section>
+                    <section class="payment_monthly">
+                         <article class="payment_monthly_select">할부 개월 수 선택
+                              <div class="monthly_installment month_num">일시불</div>
+                              <div class="monthly_installment month_num">할부 2개월</div>
+                              <div class="monthly_installment month_num">할부 3개월</div>
+                              <div class="monthly_installment month_num">할부 4개월</div>
+                              <div class="monthly_installment month_num">할부 5개월</div>
+                              <div class="monthly_installment" id="monthly_cancel">취소</div>
+                         </article>
+                    </section>
+               </section>
+               
+               <!--//////////////////////////결제창///////////////////////////// -->
+               
+               <!-- 전체 키오스크 영역 -->
+               <section id="point_area" class="point_area">
+                    <!-- 헤더영역 -->
+                    <header class="point_header">
+                         <button id="point_close_button">X</button>
+                    </header>
+                    <!-- 포인트 입력하는 영역 : 번호출력박스 & 번호입력박스 -->
+                    <section class="point_input_area">
+                         <!-- 호버했을 때 보여지는 영역 : DB 번호 -->
+
+                         <!-- 새로운 번호 입력받는 팝업 -->
+                         <div id="point_new_number_popup" class="point_new_number_popup">
+                              <div id="point_new_number_popup_string" class="point_new_number_popup_string">
+                                   WELCOME,<br>NEW NUMBER!
+                              </div>
+                         </div>
+                    <!-- 번호출력박스 -->
+                         <article class="point_output_box">
+                              <p class="point_output_string">PHONE NUMBER</p>
+                              <div class="point_user_num">
+                                   <p class="point_output_num_string">010-</p>
+                                   <p class="point_input_box"></p>
+                              </div>
+                         </article>
+                    <!-- 번호입력박스 -->
+                         <article class="point_number_box">
+
+                              <div class="portpolio_number_info">
+                                   TEST NUMBER: 010-
+                                   <span>7777-7777</span>
+                              </div>
+
+                              <div class="point_box_up">
+                                   <div class="point_number_btn">0</div>
+                                   <div class="point_number_btn">1</div>
+                                   <div class="point_number_btn">2</div>
+                                   <div class="point_number_btn">3</div>
+                                   <div class="point_number_btn">4</div>
+                                   <div class="point_number_btn" id="input_btn">입력</div>
+                              </div>
+                              <div class="point_box_down">
+                                   <div class="point_number_btn">5</div>
+                                   <div class="point_number_btn">6</div>
+                                   <div class="point_number_btn">7</div>
+                                   <div class="point_number_btn">8</div>
+                                   <div class="point_number_btn">9</div>
+                                   <div class="point_number_btn" id="reset_btn">초기화</div>
+                              </div>
+                         </article>
+                    <!-- 유저 포인트 정보 보여지는 영역 -->
+                    </section>
+                    <section class="point_user_area">
+                         <article class="point_use_point_input_box">
+                              <div class="point_use_point_input_btn">1</div>
+                              <div class="point_use_point_input_btn">2</div>
+                              <div class="point_use_point_input_btn">3</div>
+                              <div class="point_use_point_input_btn">4</div>
+                              <div class="point_use_point_input_btn">5</div>
+                              <div class="point_use_point_input_btn">6</div>
+                              <div class="point_use_point_input_btn">7</div>
+                              <div class="point_use_point_input_btn">8</div>
+                              <div class="point_use_point_input_btn">9</div>
+                              <div class="point_use_point_input_btn" id="use_point_input_btn">입력</div>
+                              <div class="point_use_point_input_btn">0</div>
+                              <div class="point_use_point_input_btn" id="use_point_reset_btn">초기화</div>
+                         </article>
+                         <article class="point_user_cumulated">
+                              <p class="point_user_string">누적 포인트&nbsp : &nbsp</p>
+                              <div id="cumulated_point" class="cumulated_point">0</div>
+                         </article>
+                         <article class="point_user_use">
+                              <p class="point_user_string">사용 포인트&nbsp : &nbsp</p>
+                              <button id="user_minus_btn">-</button>
+                              <div id="use_point" class="use_point">0</div>
+                              <button id="user_plus_btn">+</button>
+                         </article>
+                         <article class="point_user_cumulated">
+                              <p class="point_user_string">잔여 포인트&nbsp : &nbsp</p>
+                              <div id="left_point" class="cumulated_point">0</div>
+                         </article>
+                         <article class="point_user_btn">
+                              <button id="point_using_btn" class="point_using_btn">사용하기</button>
+                              <button id="point_accumulate_btn" class="point_accumulate_btn">적립하기</button>
+                         </article>
+                    </section>
+               </section>
+
+               <!-- 카드 팝업 -->
+               <section class="card_background"></section>
+
+               <section id="card_area" class="main_box">
+                    <header>
+                         <button id="card_close_button" class="cancle_btn">X</button>
+                    </header>
+                    <figure class="img_box">
+                         <img src="./image/card_img.png" alt="" class="card_img">
+                         <figcaption>카드를 인식 시켜 주세요</figcaption>
+                    </figure>
+                    <button id="card_cancle_btn" class="card_cancle_btn">입력이 완료되었습니다!</button>
+                    <article id="receipt_area" class="receipt_area">
+                         <div class="receipt_box">
+                              <div class="receipt_printarea">
+                                   <hr>
+                                   <div class="receipt_head_string">
+                                        <span id="receipt_main_choice" class="receipt_title"></span>
+                                        <span id="receipt_user_number" class="receipt_title"></span>
+                                   </div>
+                                   <hr>
+                                   <div>
+                                        <div id="receipt_orderlist" class="receipt_orderlist">
+
+                                        </div>
+                                        <div id="receipt_user_info">
+                                             <div>
+                                                  <span class="receipt_user_phone_title">휴대폰 번호</span><span id="receipt_user_phone"></span>
+                                             </div>
+                                             <div class="point_info_wrap">
+                                                  <span>적립 포인트</span>
+                                                  <span id="receipt_insert_point"></span>
+                                                  <span>누적 포인트</span>
+                                                  <span id="receipt_total_point"></span>
+                                             </div>
+                                             <div id="receipt_installment"></div>
+                                             <div>
+                                                  <span class="total_price_wrap">총 개수</span>
+                                                  <span id="receipt_total_count">0</span>
+                                                  <span class="total_price_wrap">총 금액</span>
+                                                  <span id="receipt_total_price">0</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <button id="receipt_check_btn" class="receipt_check_btn">인쇄</button>
+                         </div>
+                    </article>
+               </section>
+          </section>
+     </body>
+</html>
